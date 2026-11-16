@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: orders
+  datasource:
+    url: jdbc:postgresql://localhost:5433/orders
+    username: orders
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.format_sql: true
+    management:
+      endpoint.web.exposure.include: health,info
+  logging:
+    level:
+      org.springframework.transaction.interceptor: TRACE
+
+orders:
+  audit:
+    enabled: true
+  api:
+    default-page-size: 20
+    max-page-size: 100

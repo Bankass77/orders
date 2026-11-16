@@ -1,0 +1,4 @@
+orders:
+  api:
+    default-page-size: 5
+    max-page-size: 20
