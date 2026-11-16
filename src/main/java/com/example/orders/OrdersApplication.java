@@ -16,7 +16,7 @@ import java.time.Duration;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication/*(exclude = {DataSourceAutoConfiguration.class})*/
 @ConfigurationPropertiesScan
 public class OrdersApplication {
 
